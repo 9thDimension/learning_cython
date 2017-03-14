@@ -3,7 +3,7 @@ from Cython.Build import cythonize
 
 setup(ext_modules = cythonize(Extension(
 
-    "helloer.pyx",
+    "helloer",
     sources=["helloer.pyx" ,"HelloWorlder.cpp"],
     language="c++",
 

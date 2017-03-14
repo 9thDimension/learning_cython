@@ -1,13 +1,14 @@
+from libcpp.string cimport string
 
-cdef extern from "HelloWorlder.h" namespace "std":
+cdef extern from "HelloWorlder.h":
     cdef cppclass HelloWorlder:
-        HelloWorlder(str) except +
-        str name
+        HelloWorlder(string)
+        string name
         void sayHello()
 
 cdef class PyHelloWorlder:
-    cdef HelloWorlder *thisptr
-    def __cinit__(self, str theName):
+    cdef HelloWorlder* thisptr
+    def __cinit__(self, string theName):
         self.thisptr = new HelloWorlder(theName)
     def __dealloc__(self):
         del self.thisptr
