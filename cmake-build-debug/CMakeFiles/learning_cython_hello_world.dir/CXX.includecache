@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hal9000/learning_cython/HelloWorlder.cpp
+iostream
+-
+HelloWorlder.h
+/home/hal9000/learning_cython/HelloWorlder.h
+
+/home/hal9000/learning_cython/HelloWorlder.h
+string
+-
+
+/home/hal9000/learning_cython/main.cpp
+iostream
+-
+HelloWorlder.h
+/home/hal9000/learning_cython/HelloWorlder.h
+

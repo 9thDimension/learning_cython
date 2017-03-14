@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/learning_cython_hello_world.dir/main.cpp.o CMakeFiles/learning_cython_hello_world.dir/HelloWorlder.cpp.o  -o learning_cython_hello_world 
